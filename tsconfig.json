@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-//    "experimentalDecorators": true,
-//    "useDefineForClassFields": true,
     "target": "es5",
     "lib": [
       "dom",
@@ -29,5 +27,7 @@
   "include": [
     "src"
   ],
-  "exclude": ["/components/Layout/Layout.tsx"]
+  "exclude": [
+    "/components/Layout/Layout.tsx"
+  ]
 }

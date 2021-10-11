@@ -16,6 +16,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
+import House from '@mui/icons-material/House';
 import { NavLink } from 'react-router-dom';
 import {ReactChild, ReactChildren} from "react";
 
@@ -134,18 +135,10 @@ export default function Layout({ children }: AuxProps) {
 				</DrawerHeader>
 				<Divider />
 				<List>
-					{/*{['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-						<ListItem button key={text}>
-							<ListItemIcon>
-								{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-							</ListItemIcon>
-							<ListItemText primary={text} />
-						</ListItem>
-					))}*/}
 					<NavLink to='/'>
 						<ListItem button>
 							<ListItemIcon>
-								<InboxIcon />
+								<House />
 							</ListItemIcon>
 							<ListItemText primary={'Home'} />
 						</ListItem>
@@ -155,7 +148,7 @@ export default function Layout({ children }: AuxProps) {
 							<ListItemIcon>
 								<InboxIcon />
 							</ListItemIcon>
-							<ListItemText primary={'About'} />
+							<ListItemText primary={'Projects'} />
 						</ListItem>
 					</NavLink>
 				</List>
